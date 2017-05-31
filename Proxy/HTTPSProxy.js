@@ -5,15 +5,12 @@ import http from 'http';
 import https from 'https';
 import fs from 'fs';
 
-
-
-
 async function clientHttps(options, data) {
     // 如果是https,则开启https
     if(options.protocol.indexOf("https") > -1){
         options.headers = options.headers || {};
-        options.key = fs.readFileSync(deploy.basePath + '/bin' + '/www.ptengine.cn.key');   // 私钥
-        options.cert = fs.readFileSync(deploy.basePath + '/bin' + '/www.ptengine.cn.crt');  // 公钥
+        options.key = fs.readFileSync('privatekey.pem');   // 私钥
+        options.cert = fs.readFileSync('certificate.pem');  // 公钥
         options.port = 443;
         options.rejectUnauthorized = false;
         options.agent = new https.Agent(options);
