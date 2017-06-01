@@ -1,0 +1,28 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "algorithms with JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/381510688/algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/381510688/algorithms/issues"
+  },
+  "homepage": "https://github.com/381510688/algorithms#readme",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0"
+  }
+}
